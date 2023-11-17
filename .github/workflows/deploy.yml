@@ -17,6 +17,6 @@ jobs:
         run: npm i -g @railway/cli
 
       - name: Deploy
-        run: railway run yarn prisma migrate deploy && railway up
+        run: railway up -s be-fga-binar-gallery-challenge
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
